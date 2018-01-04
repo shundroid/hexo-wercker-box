@@ -1,0 +1,11 @@
+name: hexo-wercker-box
+version: 0.0.1
+inherits: wercker/node
+type: main
+platform: ubuntu@12.04
+description: With hexo
+keywords:
+  - hexo
+script: |
+  sudo apt-get update -y
+  sudo npm install -g hexo
