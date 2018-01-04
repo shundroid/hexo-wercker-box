@@ -1,0 +1,8 @@
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $USERNAME
+        password: $PASSWORD
+        tag: hexo, js
+        repository: shundroid/wercker-box
+        registry: https://registry.hub.docker.com
